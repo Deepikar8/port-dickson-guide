@@ -349,8 +349,8 @@ function renderTimeline(events) {
     const menu = Array.isArray(event.menu)
       ? `<ul class="menu-list">${event.menu.map((menuItem) => `<li>${escapeHtml(menuItem)}</li>`).join("")}</ul>`
       : "";
-    const packed = event.packed ? `<span class="pill">Packed</span>` : "";
     const mealLabel = event.meal ? `<span class="meal-label">${escapeHtml(event.meal)}</span>` : "";
+    const packed = event.packed && !event.meal?.toLowerCase().includes("packed") ? `<span class="pill">Packed</span>` : "";
     const note = event.note ? `<p>${escapeHtml(event.note)}</p>` : "";
 
     item.innerHTML = `
