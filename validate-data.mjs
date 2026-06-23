@@ -1,6 +1,10 @@
-import { requiredMenuItems, tripDays } from "./app.js";
+import { changeNotice, requiredMenuItems, tripDays } from "./app.js";
 
 const failures = [];
+
+if (!/itinerary/i.test(changeNotice) || !/menu/i.test(changeNotice) || !/minor changes/i.test(changeNotice)) {
+  failures.push("Change notice should mention itinerary, menu, and minor changes.");
+}
 
 if (tripDays.length !== 5) {
   failures.push(`Expected 5 trip days, found ${tripDays.length}.`);

@@ -246,6 +246,8 @@ const tripDays = [
   }
 ];
 
+const changeNotice = "Itinerary times and menu items may have minor changes during the trip.";
+
 const requiredMenuItems = [
   "English breakfast scramble egg",
   "Grilled tomato",
@@ -306,6 +308,7 @@ function renderApp() {
 
 function renderHeader(day) {
   document.querySelector("#selected-day-summary").textContent = `${day.weekday} ${day.shortDate}: ${day.summary}`;
+  document.querySelector("#change-notice").textContent = changeNotice;
 }
 
 function renderDayTabs(activeDay) {
@@ -383,8 +386,8 @@ function escapeHtml(value) {
 }
 
 if (typeof window !== "undefined") {
-  window.portDicksonGuide = { tripDays, requiredMenuItems };
+  window.portDicksonGuide = { changeNotice, tripDays, requiredMenuItems };
   renderApp();
 }
 
-export { tripDays, requiredMenuItems };
+export { changeNotice, tripDays, requiredMenuItems };

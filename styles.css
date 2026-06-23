@@ -80,6 +80,18 @@ h1 {
   line-height: 1.4;
 }
 
+.change-notice {
+  margin: 10px 0 0;
+  padding: 9px 11px;
+  color: var(--teal-dark);
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1.35;
+  border: 1px solid rgba(15, 118, 110, 0.24);
+  border-radius: 8px;
+  background: rgba(231, 245, 240, 0.88);
+}
+
 .day-tabs {
   display: flex;
   gap: 10px;
