@@ -76,7 +76,7 @@ const tripDays = [
         meal: "Dinner",
         title: "Dinner at Han's",
         location: "Han's Cook House",
-        menu: ["BBQ steak", "Mash potatoes", "Sauteed vegetables", "Grilled corn with compound butter", "Chimichurri sauce"]
+        menu: ["Miso glazed chicken thighs", "Chicken gyoza", "Rice", "Sesame mayo salad"]
       },
       { time: "7:30pm", type: "activity", title: "Night walk arrival", location: "Pantai Teluk Pelanduk", note: "Arrival and toilet break." },
       { time: "7:45pm", type: "activity", title: "Nocturnal marine wildlife intro", location: "Pantai Teluk Pelanduk", note: "Briefing before heading to the beach." },
@@ -193,7 +193,7 @@ const tripDays = [
         meal: "Dinner",
         title: "Dinner at Han's",
         location: "Han's Cook House",
-        menu: ["Miso glazed chicken thighs", "Chicken gyoza", "Rice", "Sesame mayo salad"]
+        menu: ["BBQ steak", "Mash potatoes", "Sauteed vegetables", "Grilled corn with compound butter", "Chimichurri sauce"]
       },
       { time: "7:00pm", type: "travel", title: "Bus pickup", location: "Han's Cook House", note: "Depart for Tanjong Tuan night walk." },
       { time: "7:30pm", type: "activity", title: "Night walk arrival", location: "Tanjong Tuan, Melaka", note: "Arrival and toilet break." },

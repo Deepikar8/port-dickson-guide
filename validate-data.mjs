@@ -85,6 +85,16 @@ for (const meal of externalMeals) {
   }
 }
 
+const jun23Dinner = allEvents.find((event) => event.date === "2026-06-23" && event.meal === "Dinner");
+if (!jun23Dinner?.menu?.includes("Miso glazed chicken thighs")) {
+  failures.push("Jun 23 dinner should be the miso glazed chicken meal.");
+}
+
+const jun25Dinner = allEvents.find((event) => event.date === "2026-06-25" && event.meal === "Dinner");
+if (!jun25Dinner?.menu?.includes("BBQ steak")) {
+  failures.push("Jun 25 dinner should be the BBQ steak meal.");
+}
+
 if (failures.length > 0) {
   console.error(failures.join("\n"));
   process.exit(1);
